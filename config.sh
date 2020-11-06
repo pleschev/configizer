@@ -55,6 +55,8 @@ declare -A UDEVRULES
 # * An example rule is just below.
 # UDEVRULES[20-something]='ACTION==\"add\", SUBSYSTEM==\"net\", ATTRS{idVendor}==\"7392\", ATTRS{idProduct}==\"7811\", NAME=\"extAP\"\n'
 
+UDEVRULES[20-vchiq]='SUBSYSTEM==\"vchiq\",GROUP=\"video\",MODE=\"0660\"'
+
 # Whether or not restart the engine if the supervisor restart failed.
 FORCE_SUPERVISOR_RESTART="no"
 
